@@ -1,5 +1,5 @@
 {
-  "name": "seq-logging",
+  "name": "@ngbrown/seq-logging",
   "version": "0.3.0",
   "description": "Sends structured log events to the Seq HTTP ingestion API",
   "keywords": [
@@ -13,10 +13,10 @@
   },
   "author": "Datalust and contributors",
   "license": "Apache-2.0",
-  "homepage": "https://github.com/continuousit/seq-logging",
+  "homepage": "https://github.com/ngbrown/seq-logging",
   "repository": {
     "type": "git",
-    "url": "https://github.com/continuousit/seq-logging.git"
+    "url": "https://github.com/ngbrown/seq-logging.git"
   },
   "devDependencies": {
     "mocha": "^5.2.0",
