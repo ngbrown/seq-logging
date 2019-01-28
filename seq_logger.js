@@ -292,7 +292,9 @@ class SeqLogger {
         const {batch, bytes} = dequeued;
 
         const dataParts = [HEADER, batch.join(','), FOOTER];
-        const options = {type: 'application/json'};
+
+        // CORS-safelisted for the Content-Type request header
+        const options = {type: 'text/plain'};
         
         const endpointWithKey = Object.assign({}, this._endpoint, {query: {'apiKey': this._apiKey}});
 

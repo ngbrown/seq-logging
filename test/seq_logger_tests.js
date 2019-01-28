@@ -107,7 +107,7 @@ describe('SeqLogger', () => {
            assert.equal(result, true);
            assert.equal(sendBeacon.callCount, 1);
            assert.equal(sendBeacon.lastCall.args[0], 'https://my-seq/prd/api/events/raw?apiKey=12345');
-           assert.equal(sendBeacon.lastCall.args[1].type, 'application/json');
+           assert.equal(sendBeacon.lastCall.args[1].type, 'text/plain');
            assert.equal(sendBeacon.lastCall.args[1].size, 166);
        });
 
